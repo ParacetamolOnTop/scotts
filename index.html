@@ -3,10 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scott's</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Website</title>
 </head>
 <body>
-    <h1>On work</h1>
+    <header>
+        <a href="index.html" class="logo" aria-label="Go to home">
+            <h1>LOGO</h1>
+        </a>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." aria-label="Search">
+        </div>
+    </header>
+    <main>
+        <!-- Menu for option select -->
+        <div class="content-wrapper">
+            <aside class="sidebar">
+                <h2>Filter Countries</h2>
+                <form>
+                    <div class="filter-group">
+                        <label><input type="checkbox" name="criteria1"> United States</label>
+                    </div>
+                    <div class="filter-group">
+                        <label><input type="checkbox" name="criteria2"> United Kingdom</label>
+                    </div>
+                    <div class="filter-group">
+                        <label><input type="checkbox" name="criteria3"> France</label>
+                    </div>
+                    <div class="filter-group">
+                        <label><input type="checkbox" name="criteria4"> Belgium</label>
+                    </div>
+                    <div class="filter-group">
+                        <label><input type="checkbox" name="criteria5"> Canada</label>
+                    </div>
+                    <button type="submit" class="apply-button">Apply Filters</button>
+                </form>
+            </aside>
+
+            <section class="content">
+                <h2>On work...</h2>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
