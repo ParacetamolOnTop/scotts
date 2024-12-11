@@ -1,9 +1,133 @@
+/* Global styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4; 
 }
 
-h1 {
+/* Header styles */
+header {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 1em 2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.logo h1 {
+    font-size: 1.5em;
+    margin: 0;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 2em;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ff6347;
+}
+
+.search-container {
+    margin-left: auto;
+}
+
+.search-container input {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 200px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #ff6347;
+    box-shadow: 0 0 5px rgba(255, 99, 71, 0.5);
+}
+
+/* Main layout styles */
+main {
+    padding: 2em;
+    background-color: #f4f4f4;
+}
+
+/* Wrapper for sidebar and content */
+.content-wrapper {
+    display: flex;
+    margin-top: 1em; 
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 2em;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.filter-group {
+    margin-bottom: 1em;
+}
+
+.filter-group label {
+    font-size: 1em;
+    color: #555;
+    cursor: pointer;
+}
+
+.filter-group input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+.apply-button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #e5533c;
+}
+
+/* Content styles */
+.content {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
