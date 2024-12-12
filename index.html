@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Scott's</title>
 </head>
 <body>
     <header>
         <a href="index.html" class="logo" aria-label="Go to home">
-            <h1>LOGO</h1>
+        <h1>LOGO</h1>
         </a>
         <nav>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
             <ul class="menu">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
@@ -24,25 +26,32 @@
         </div>
     </header>
     <main>
-        <!-- Menu for option select -->
+        <!-- Button to toggle filters on mobile -->
+        <button class="toggle-filters-button" aria-label="Toggle filters">Filters</button>
+        
         <div class="content-wrapper">
-            <aside class="sidebar">
+            <aside class="sidebar hidden">
+                <button class="close-sidebar-button" aria-label="Close filters">×</button>
                 <h2>Filter type</h2>
                 <form>
                     <div class="filter-group">
-                        <label><input type="checkbox" name="criteria1"> House</label>
+                        <label><input type="checkbox" name="house"> House</label>
                     </div>
                     <div class="filter-group">
-                        <label><input type="checkbox" name="criteria2"> Apartment</label>
+                        <label><input type="checkbox" name="apartment"> Apartment</label>
                     </div>
                     <button type="submit" class="apply-button">Apply Filters</button>
                 </form>
             </aside>
-
+            
+        
             <section class="content">
                 <h2>On work...</h2>
             </section>
         </div>
-    </main>
-</body>
+        </main>
+        <script src="script.js"></script>
+    </body>
 </html>
+
+
