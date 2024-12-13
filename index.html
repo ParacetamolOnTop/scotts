@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Scott's</title>
 </head>
 <body>
     <header>
         <a href="index.html" class="logo" aria-label="Go to home">
-        <h1>LOGO</h1>
+          <h1>LOGO</h1>
         </a>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." aria-label="Search">
+        </div>
+    </header>
         <nav>
             <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
             <ul class="menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICE</a></li>
-                <li><a href="#">CONTACT</a></li>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">SERVICE</a></li>
+              <li><a href="#">CONTACT</a></li>
             </ul>
-        </nav>
-        <div class="search-container">
-            <input type="text" placeholder="Search..." aria-label="Search">
-        </div>
-    </header>
+          </nav>
+      
     <main>
-        <!-- Button to toggle filters on mobile -->
-        <button class="toggle-filters-button" aria-label="Toggle filters">Filters</button>
-        
+        <button class="toggle-filters-button" aria-label="Toggle filters">
+            <i class="fas fa-list"></i> Filters
+          </button>
+                  
         <div class="content-wrapper">
             <aside class="sidebar hidden">
                 <button class="close-sidebar-button" aria-label="Close filters">×</button>
@@ -56,3 +59,4 @@
         <script src="script.js"></script>
     </body>
 </html>
+
