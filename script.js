@@ -2,6 +2,9 @@
 const toggleFiltersButton = document.querySelector('.toggle-filters-button');
 const closeSidebarButton = document.querySelector('.close-sidebar-button');
 const sidebar = document.querySelector('.sidebar');
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
 
 // Open the sidebar when the toggle button is clicked
 toggleFiltersButton.addEventListener('click', () => {
@@ -16,3 +19,7 @@ closeSidebarButton.addEventListener('click', () => {
 });
 
 
+// Toggle the menu visibility when the menu toggle button is clicked
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+});
